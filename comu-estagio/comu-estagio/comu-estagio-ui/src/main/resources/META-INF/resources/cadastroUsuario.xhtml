@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	template="template.xhtml">
+	<ui:define name="conteudo">
+		<div id="divCadastro">
+			<div class="wrap">
+				<h1>
+					<span>Cadastro</span>
+				</h1>
+			</div>
+			<h:form class="form-signin form-cadastro " role="form">
+				<div class="cadastro">
+					<h:inputText class="form-control" pt:placeholder="Nome"
+						value="#{cadastroView.usuario.nmUsuario}" />
+					<br />
+					<h:inputText class="form-control" pt:placeholder="email"
+						value="#{cadastroView.usuario.dsEmail}" />
+					<br />
+					<h:inputSecret class="form-control" pt:placeholder="Senha"
+						value="#{cadastroView.usuario.senha}" />
+					<br />
+					<h:inputSecret class="form-control"
+						pt:placeholder="Confirme sua senha"
+						value="#{cadastroView.usuario.confSenha}" />
+					<br />
+					<h:commandButton class="btn btn-lg btn-primary btn-block"
+						action="#{cadastroView.salvar()}" value="Salvar" />
+				</div>
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>

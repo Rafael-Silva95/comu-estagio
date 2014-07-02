@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Perfil</title>
+	<h:outputScript library="jquery" name="jquery-1.9.1.js" />
+	<h:outputStylesheet library="bootstrap-3.1.1-dist/css"
+		name="bootstrap.min.css" />
+	<h:outputStylesheet library="css" name="paginapost.css" />
+	<h:outputScript library="js" name="pagina-post.js" />
+</h:head>
+<h:body>
+<div class="container">
+  <h1>Gravacards!</h1>
+    <div class="card-module">
+        <div class="content">
+            <figure class="me">
+                <img src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=240" alt="" />
+            </figure>
+            <div class="info">
+                <h4 class="display-name">Beau Lebens</h4>
+                <p class="email"><i class="fa fa-envelope-o"></i> <span>beau@dentedreality.com.au</span></p>
+              <div class="social-links">
+                <a id="facebook-lnk" href="#"><i class="fa fa-facebook"></i></a>
+                <a id="twitter-lnk" href="#"><i class="fa fa-twitter"></i></a>
+                <a id="linked-lnk" href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+        </div>
+    </div>
+  
+    <form id="yours">
+      <h2>Get yours</h2>
+      <input type="text" placeholder="Your email" id="email-input" />
+      <button type="submit" id="generate-btn">Generate!</button>
+    </form>
+</div>
+</h:body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Em desenvolvimento</title>
+	<h:outputScript library="jquery" name="jquery-1.9.1.js" />
+	<h:outputStylesheet library="bootstrap-3.1.1-dist/css"
+		name="bootstrap.min.css" />
+	<h:outputStylesheet library="css" name="comu.css" />
+</h:head>
+<h:body>
+
+	<div class="container">
+
+		<h:form class="form-signin form-login" role="form" method="post"
+			action="j_security_check">
+			<div class="democontain">
+				<div class="logo">COMU</div>
+				<div class="cloud" id="c01"></div>
+				<div class="cloud" id="c02"></div>
+				<div class="cloud" id="c03"></div>
+				<div class="cloud" id="c04"></div>
+				<div class="cloud" id="c05"></div>
+				<div class="cloud" id="c06"></div>
+				<div class="cloud" id="c07"></div>
+				<div class="cloud" id="c08"></div>
+				<div class="cloud" id="c09"></div>
+				<div class="cloud" id="c10"></div>
+				<div class="cloud" id="c11"></div>
+			</div>
+
+			<h2 class="form-signin-heading"></h2>
+
+			<h:inputText class="form-control" pt:placeholder="Email address"
+				id="j_username" name="j_username" />
+
+			<h:inputSecret class="form-control" pt:placeholder="Password"
+				id="j_password" name="j_password" />
+
+			<label class="checkbox"> <input type="checkbox"
+				value="lembrar" />Lembrar
+			</label>
+			<div id="btnsLogin">
+				<h:commandButton class="btn btn-lg btn-primary btn-block"
+					value="Entrar" action="pagina-post?faces-redirect=true" />
+				<h:commandButton class="btn btn-lg btn-primary btn-block"
+					value="Cadastre-se"
+					action="cadastroUsuario.xhtml?faces-redirect=true" />
+			</div>
+		</h:form>
+	</div>
+</h:body>
+</html>

@@ -1,0 +1,312 @@
+@CHARSET "UTF-8";
+
+.form-login {
+	margin-top: 15%;
+	width: 30%;
+	align-items: center;
+	margin-left: 32%;
+}
+
+.form-cadastro {
+	width: 70%;
+}
+
+.header {
+	height: 38px;
+	background-color: #2E2F37;
+	width: 100%;
+}
+
+.header-image {
+	height: 230px;
+}
+
+.logo {
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+.btn-posicao {
+	float: right;
+	margin-top: 2px;
+}
+
+input.btn.btn-lg.btn-primary.btn-block {
+	width: 12%;
+	background-color: #2E2F37;
+	border-color: #55977E;
+}
+
+div#btnsLogin input.btn.btn-lg.btn-primary.btn-block {
+	width: 50%;
+	text-align: center;
+	float: left;
+	margin-top: -10px;
+	background-color: #2E2F37;
+	border-color: #55977E
+}
+div#divCadastro {
+	margin-left: 23%;
+}
+
+body {
+	background-color: #55977E;
+}
+
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+.logo{
+  font-family:'Raleway',sans-serif;
+  text-transform:uppercase;
+  font-size:64px;
+  display:block;
+  z-index:1;
+  color:#fff;
+}
+@-webkit-keyframes CloudWobble{
+  0%{
+    -webkit-transform:scale(1.0);
+  }
+  25%{
+    -webkit-transform:scale(1.1);
+  }
+  50%{
+    -webkit-transform:scale(1.05);
+  }
+  75{
+    -webkit-transform:scale(0.95);
+  }
+  100%{
+    -webkit-transform:scale(1.0);
+  }
+}
+.democontain{
+  width:444px;
+  margin:10% auto;
+  position:relative;
+  margin-left: 35px;
+}
+.cloud{
+  position:absolute;
+  background:#2E2F37;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  z-index:-1;
+  -webkit-animation:CloudWobble 2s infinite alternate ease-in-out;
+}
+.lightning{
+  
+}
+#c01{
+  top:0px;
+  left:-10px;
+  -webkit-animation-delay:.2s;
+}
+#c02{
+  top:2px;
+  left:5px;
+  -webkit-animation-delay:.1s;
+}
+#c03{
+  top:4px;
+  left:46px;
+  -webkit-animation-delay:.4s;
+}
+#c04{
+   top:-2px;
+  left:98px;
+  -webkit-animation-delay:.6s;
+}
+#c05{
+   top:2px;
+  left:132px;
+  -webkit-animation-delay:.5s;
+}
+#c06{
+   top:-3px;
+  left:152px;
+  -webkit-animation-delay:.4s;
+}
+#c07{
+   top:4px;
+  left:176px;
+  -webkit-animation-delay:.3s;
+}
+#c08{
+   top:4px;
+  left:176px;
+  -webkit-animation-delay:.4s;
+}
+#c09{
+   top:2px;
+  left:150px;
+  -webkit-animation-delay:.2s;
+}
+#c10{
+   top:5px;
+  left:152px;
+  -webkit-animation-delay:.5s;
+}
+#c11{
+   top:4px;
+  left:176px;
+  -webkit-animation-delay:.1s;
+}
+.LogoCadastro{
+	float: left;
+	margin-top: -108px;
+	margin-left: -56px;
+}
+/*  Cadastro ______________--------------------------------------*/
+
+.wrap {
+  text-align: center;
+  margin: 3em auto;
+}
+
+h1 {
+  color: #333;
+  font: bolder 36px georgia;
+  display: inline-block;
+}
+
+h1:before,
+h1:after,
+span:before,
+span:after {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+}
+
+h1:before,
+h1:after {
+  width: 5em;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+span:before,span:after { 
+ 	height: 14px;
+	width: 14px;
+	background: white;
+	border: 2px solid #333;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+span:before { margin-right: .6em; }
+span:after { margin-left: .6em; }
+
+div.wrap {
+	margin-right: 35%;
+}
+/* Perfil _-------------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-backface-visibility: none;
+}
+
+.background{
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: #2c2e31;
+  z-index: 0;
+}
+
+.horizontal_center{
+ position: relative;
+left: 50%;
+-webkit-transform: translateX(-50%);
+}
+
+.card{
+  padding: 20px 0;
+  width: 700px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.25);
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 5;
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    top: 0;
+    background: #f9f9f9;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    z-index: -1;
+  }
+}
+ .user_photo{
+	position: relative;
+	background: #fff;
+	padding: 5px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	background: url("http://karshhagan.com/demos/sxsb/cto2.gif") left center no-repeat;
+	background-size: cover;
+  	-webkit-text-fill-color: transparent;
+}
+}
+.refresh{
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      padding: 10px 15px;
+      color: #fff;
+      background: rgba(0,0,0,0.75);
+      border-radius: 3px;
+      text-decoration: none;
+      opacity: 0;
+      display: block;
+      -webkit-transform: translateX(-50%);
+      -webkit-transition:all 0.25s ease-out;
+ }
+    &:hover .refresh{
+      bottom: -20px;
+      opacity: 1;
+    }
+  }
+  #user_title{
+    color: #999999;
+    font-size: 18px;
+    margin: 0;
+  }
+  #user_value{
+    color: #2c2e31;
+    font-size: 38px;
+    margin: 5px;
+    text-transform: capitalize;
+  }
+}
+ul, menu, dir {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+div.background {
+	margin-top: 369px;
+	height: calc(100% - 407px);
+}

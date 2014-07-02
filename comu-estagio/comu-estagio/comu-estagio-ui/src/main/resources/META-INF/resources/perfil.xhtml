@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" 
+	template="template.xhtml">
+
+	<ui:define name="header">
+		<h:outputScript library="js" name="perfil.js" />
+	</ui:define>
+	<ui:define name="conteudo">
+		<div class="card">
+			<div class="details">
+				<div class="user_photo horizontal_center" id="user_photo">
+				</div>
+				<p id="user_title">Olá, (Nome do usuário Logado)</p>
+			</div>
+		</div>
+		<div class="background"></div>
+	</ui:define>
+</ui:composition>
